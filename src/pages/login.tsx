@@ -36,7 +36,7 @@ const Login: React.FC = () => {
       const user = userCredential.user;
 
       // Check if user exists in Firestore
-      const docRef = doc(db, "users", user.uid);
+      const docRef = doc(db, "user", user.uid);
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {

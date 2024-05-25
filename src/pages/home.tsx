@@ -52,7 +52,7 @@ const ToDoList: React.FC = () => {
 
   const fetchUserName = async (userId: string) => {
     try {
-      const userDocRef = doc(db, 'users', userId);
+      const userDocRef = doc(db, 'user', userId);
       const userDocSnap = await getDoc(userDocRef);
       if (userDocSnap.exists()) {
         const userData = userDocSnap.data();
@@ -180,8 +180,8 @@ const ToDoList: React.FC = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-info">
-          <p>Developer Name: Bimbo E. Villaganas</p>
-          <p>Age: 22</p>
+          <p>Developer Name: dalahigon, jessmar ivan</p>
+          <p>Age: 20</p>
           <p>Institution: Norther Bukidnon State College</p>
           <p>Course: Bachelor of Science in Information Technology (BSIT)</p>
           <p>Year: 3rd year</p>
